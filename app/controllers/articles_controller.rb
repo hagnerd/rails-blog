@@ -8,9 +8,6 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
 
-    # To allow the comment form to work.
-    # @comment = Comment.new
-    # @comment.article_id = @article.id
   end
 
   def new
